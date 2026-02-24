@@ -2,6 +2,29 @@
 
 This document provides comprehensive guidance for AI assistants working with the djjung314 profile repository.
 
+## Quick Start for AI Assistants
+
+> Read this section first before doing anything else.
+
+**Current priority**: `README.md` does not exist yet. The most impactful thing any AI assistant can do is create it.
+
+### First-Session Checklist
+
+1. Run `git status` and `git log --oneline` to understand the current state
+2. Check which feature branch you are on (`git branch`)
+3. If `README.md` does not exist, ask the user for their profile information and create it
+4. If `README.md` exists, read it fully before making any changes
+5. Always develop on the provided `claude/...` feature branch — never push to `master` directly
+
+### Immediate Next Steps (Prioritized)
+
+| Priority | Task | Notes |
+|----------|------|-------|
+| 1 | Create `README.md` | Ask user for bio, skills, projects, links |
+| 2 | Add `assets/images/` directory | Only if README needs images |
+| 3 | Set up GitHub Stats badges | Embed `github-readme-stats` widgets |
+| 4 | Configure `.github/workflows/` | Only if automation is needed |
+
 ## Repository Overview
 
 **Repository Type**: GitHub Profile README Repository
@@ -285,16 +308,18 @@ As of 2026-02-24:
 
 | Item | Status |
 |------|--------|
-| `CLAUDE.md` | Created, committed to `master` |
-| `README.md` | Not yet created |
+| `CLAUDE.md` | Created and up to date |
+| `README.md` | **Not yet created** |
 | `assets/` directory | Not yet created |
 | `.github/` directory | Not yet created |
 | `docs/` directory | Not yet created |
-| Branches | `master` (1 commit), `claude/claude-md-mm0hatcr98636a2o-5e6uI` (active dev) |
+| `master` branch | 1 commit |
+| `claude/claude-md-mm0hatcr98636a2o-5e6uI` | 2 commits (active dev branch) |
 | GitHub Actions / CI | None configured |
 
-**Git log summary**:
+**Git log summary** (feature branch):
 ```
+811a10c  docs: update CLAUDE.md with current repository state
 4610c72  docs: add comprehensive CLAUDE.md guide for AI assistants
 ```
 
@@ -312,4 +337,12 @@ As this repository evolves, update this document to reflect:
 
 **Last Updated**: 2026-02-24
 **Maintained By**: AI assistants working with djjung314
-**Version**: 1.1.0
+**Version**: 1.2.0
+
+### Changelog
+
+| Version | Date | Summary |
+|---------|------|---------|
+| 1.2.0 | 2026-02-24 | Add Quick Start section, Immediate Next Steps table, update git log to 2 commits |
+| 1.1.0 | 2026-02-24 | Correct main branch to `master`, add factual current-state table, split current/planned structure |
+| 1.0.0 | 2025-12-02 | Initial CLAUDE.md creation |
